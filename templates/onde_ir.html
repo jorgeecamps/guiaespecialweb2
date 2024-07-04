@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Onde Ir</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./css/onde_ir.css') }}">
+</head>
+
+<body>
+    <header>
+        <!-- Título à esquerda -->
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo guia especial" />
+        </div>
+        <!-- Barra de menus à direitaa -->
+        <div class="menu">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Inicio</a></li>
+                <li><a href="/quem_somos">Quem somos</a></li>
+                <li><a href="/onde_ir">Onde ir</a></li>
+                <li><a href="/certificacao_guiaespecial">Certificação Guia Especial</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="onde-ir">
+        <div class="busca_locais">
+            <label for="site-search">Busque o local</label>
+            <input type="search" id="site-search" name="q" />
+            
+        </div>
+        <div class="teste">
+            <div id="lista_locais">
+                <article class="cartao_local">
+                    <div class="img_local">
+                        <img src="{{ url_for('static', filename='img/restaurante.png') }}" alt="restaurante x" />
+                    </div>
+                    <div class="info_local">
+                        <h3>Restaurante</h3>
+                        <p>
+                            <span><i class="fa-solid fa-s tar" style="color: #ffd43b"></i>
+                                4.8</span>
+                            Restaurante bla bla bla
+                        </p>
+                        <span class="acessibilidade">Acessivél</span>
+                    </div>
+                </article>
+                <article class="cartao_local">
+                    <div class="img_local">
+                        <img src="{{ url_for('static', filename='img/cinema.png') }}" alt="cinema x" />
+                    </div>
+                    <div class="info_local">
+                        <h3>Cinema</h3>
+                        <p>
+                            <span><i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                4.8</span>
+                            Cinema bla bla bla
+                        </p>
+                        <span class="acessibilidade">Acessivél</span>
+                    </div>
+                </article>
+                <article class="cartao_local">
+                    <div class="img_local">
+                        <img src="{{ url_for('static', filename='img/teatro.png') }}" alt="teatro x" />
+                    </div>
+                    <div class="info_local">
+                        <h3>Teatro</h3>
+                        <p>
+                            <span><i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                4.8</span>
+                            Teatro bla bla bla
+                        </p>
+                        <span class="acessibilidade">Acessivél</span>
+                    </div>
+                </article>
+            </div>
+            <!-- Mapa -->
+            <div id="map"></div>
+            <!-- Barra de pesquisa -->
+            <input id="pac-input" class="controls" type="text" placeholder="Pesquisar local...">
+        </div>
+              </div>
+    </section>
+
+    <br><br><br>
+    <br><br><br>
+    <footer id="Barra">
+        
+        <div class="media-social">
+            <div class="icon">
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="icon"><i class="fa-brands fa-square-facebook"></i></div>
+        </div>
+        <span>@ Guia Especial - Cuiabá, MT </span>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCq23NPS113f_FeDOsuI8MDbQR4qQZS8B8&libraries=places&callback=initMap" async defer></script>
+    <script src="{{ url_for('static', filename='./js/map.js') }}"></script>
+
+</body>
+
+</html>
