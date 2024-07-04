@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+
+<body>
+    <header>
+        <!-- Título à esquerda -->
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo guia especial" />
+        </div>
+        <!-- Barra de menus à direita -->
+        <div class="menu">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Inicio</a></li>
+                <li><a href="/quem_somos">Quem somos</a></li>
+                <li><a href="/onde_ir">Onde ir</a></li>
+                <li><a href="/certificacao_guiaespecial">Certificação Guia Especial</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Conteúdo certificacao -->
+    <section id="certificacao_guia">
+        <div class="certificacao_img">
+            <img src="{{ url_for('static', filename='img/celo.png') }}" alt="celo guia especial" />
+        </div>
+        <div class="certificacao_texto">
+            <h2>Certificação Guia Especial</h2>
+            <p>
+                is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the
+                1500s, when an unknown printer took a galley of type and scrambled
+                it to make a type specimen book.
+            </p>
+        </div>
+    </section>
+    </main>]
+    
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <footer id="barra">
+
+        <span>@ Guia Especial - Cuiabá, MT </span>
+    </footer>
+</body>
+
+</html>
