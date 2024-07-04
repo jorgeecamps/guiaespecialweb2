@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/quem_somos.css') }}">
+</head>
+
+<body>
+    <header>
+        <!-- Título à esquerda -->
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo guia especial" />
+        </div>
+        <!-- Barra de menus à direita -->
+        <div class="menu">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Início</a></li>
+                <li><a href="/quem_somos">Quem somos</a></li>
+                <li><a href="/onde_ir">Onde ir</a></li>
+                <li><a href="/certificacao_guiaespecial">Certificação Guia Especial</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Conteúdo quem somos -->
+    <section id="quem_somos">
+    <div class="quem_somos_texto">
+        <h2>Quem Somos</h2>
+        <p>
+            Bem-vindo ao Guia Especial - Seu Guia Acessível para o Mundo Autista. Em um mundo em constante movimento, é
+            essencial que todos tenham acesso às informações necessárias para desfrutar da vida ao máximo. Para aqueles
+            no espectro autista e suas famílias, encontrar estabelecimentos acolhedores e acessíveis pode ser um desafio
+            diário. Aqui é onde nós entramos em ação! O Guia Especial nasceu com a missão de simplificar a vida das
+            pessoas com autismo, oferecendo um guia completo e confiável de estabelecimentos que são amigáveis e
+            acessíveis. Seja um restaurante com um ambiente tranquilo, um parque com espaços sensoriais ou uma loja com
+            atendimento compreensivo, nosso site está aqui para ajudá-lo a encontrar o que precisa.
+        </p>
+        <p>
+            Por que escolher o Guia Especial? Informações Precisas: Nosso banco de dados é atualizado regularmente para
+            garantir que você obtenha informações precisas e atualizadas sobre os estabelecimentos. Comunidade Engajada:
+            Criamos uma comunidade acolhedora onde os usuários podem compartilhar experiências, recomendações e dicas
+            úteis. Acessibilidade Priorizada: Nosso site é projetado com acessibilidade em mente, garantindo que todos
+            possam navegar e encontrar as informações necessárias sem dificuldade. Empoderamento e Educação: Além de ser
+            um guia de estabelecimentos, oferecemos recursos educacionais e histórias inspiradoras para promover a
+            conscientização e a compreensão do autismo.
+        </p>
+        <p>
+            Junte-se a nós nesta jornada de tornar o mundo um lugar mais inclusivo e acolhedor para todos. Explore,
+            descubra e compartilhe suas experiências conosco no Guia Especial. Juntos, podemos criar um mundo
+            onde cada pessoa no espectro autista se sinta compreendida, apoiada e celebrada.
+        </p>
+    </div>
+    
+    </section>
+    <div class="quem_somos_img">
+        <h3>Equipe do Projeto</h3>
+        <img src="{{ url_for('static', filename='img/equipe.png') }}" alt="equipe" />
+    </div>
+
+    <footer id="barra">
+        <p></p>
+        <span>@ Guia Especial - Cuiabá, MT </span>
+    </footer>
+</body>
+
+</html>
