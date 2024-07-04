@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guia Especial Web</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contato.css') }}">
+    <script src="https://kit.fontawesome.com/c993805466.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Título à esquerda -->
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo guia especial" />
+        </div>
+        <!-- Barra de menus à direita -->
+        <div class="menu">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Inicio</a></li>
+                <li><a href="/quem_somos">Quem somos</a></li>
+                <li><a href="/onde_ir">Onde ir</a></li>
+                <li><a href="/certificacao_guiaespecial">Certificação Guia Especial</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </div>
+
+        <section id="contato">
+            <h2>Fale Conosco </h2>
+            <p>Preencha o formulário abaixo para entrar em contato conosco:</p>
+            <form action="/submit_contato" method="POST">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="empresa">Empresa:</label>
+                    <input type="text" id="empresa" name="empresa">
+                </div>
+                <div>
+                    <label for="procura">O que você procura?</label>
+                    <input type="text" id="procura" name="procura">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <footer id="barra">
+            <p></p>
+            <span>@ Guia Especial - Cuiabá, MT </span>
+        </footer>
+</body>
+
+</html>
