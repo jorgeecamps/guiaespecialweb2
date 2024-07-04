@@ -1,0 +1,61 @@
+/* Estilos para o conteúdo no centro */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 20px;
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a barra de menus à direita */ /*permite mover a barra de menus*/
+.menu {
+    display: flex;               /* Define o container como flexível */
+    justify-content: left;   /* Alinha os itens à direita */
+    align-items: left;         /* Centraliza os itens verticalmente */
+    /*padding: 15px 0;  /* Aumenta o padding vertical para 15px */
+    /*height: 60px;  /* Altura fixa de 60 pixels para a barra de menu */
+    padding: 10px 0;  /* Aumenta o padding vertical para 10px */
+    height: 50px;     /* Altura fixa de 50 pixels para a barra de menu */
+    background-color: #0055d4;       /* Cor de fundo cinza claro como exemplo */
+}
+
+.menu ul {
+    list-style-type: none;       /* Remove os marcadores de lista */
+    padding: 0;                  /* Remove o padding padrão */
+    margin: 0;                   /* Remove a margem padrão */
+}
+
+.menu ul li {
+    display: inline;             /* Exibe os itens em linha horizontal */
+    margin-left: 20px;           /* Adiciona uma margem à esquerda de 20px entre os itens */
+}
+
+.menu ul li a {
+    text-decoration: none;       /* Remove a decoração de sublinhado dos links */
+    color: #fafafa;              /* Define a cor do texto dos links */
+    font-weight: bold;           /* Define o peso da fonte dos links como negrito */
+}
+
+.certification-image {
+    max-width: 30%;
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease-in-out; /* Transição suave */
+    margin: 20px 0; /* Margem superior e inferior */
+}
+
+.certification-image:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+
+
