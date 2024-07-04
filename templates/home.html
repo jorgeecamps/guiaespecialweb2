@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Guia Especial Web</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <script src="https://kit.fontawesome.com/c993805466.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Título à esquerda -->
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo guia especial" />
+        </div>
+        <!-- Barra de menus à direita -->
+        <div class="menu">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Inicio</a></li>
+                <li><a href="/quem_somos">Quem somos</a></li>
+                <li><a href="/onde_ir">Onde ir</a></li>
+                <li><a href="/certificacao_guiaespecial">Certificação Guia Especial</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Container principal -->
+    <main class="container">
+        <section id="inicio">
+            <div class="encontre_local">
+                <h1>Guia Especial</h1>
+                <p>
+                    Encontre lugares acolhedores para todos! Descubra e avalie
+                    estabelecimentos que compreendem as necessidades do autismo.
+                </p>
+
+                <a href="/onde_ir"><button id="btn">Encontre o seu local</button></a>
+
+
+            </div>
+            <div class="mapa_brasil">
+                <img src="{{ url_for('static', filename='img/mapa.png') }}" alt="mapa do Brasil" />
+            </div>
+        </section>
+    
+    </main>
+    <footer id="contato">
+        <p>Entre em Contato conosco</p>
+        <div class="media-social">
+            <div class="icon">
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="icon"><i class="fa-brands fa-square-facebook"></i></div>
+        </div>
+        <span>@ Guia Especial - Cuiabá, MT </span>
+    </footer>
+</body>
+</html>
